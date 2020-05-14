@@ -1,0 +1,105 @@
+html, body,
+ul, ol, li,
+h1, h2, h3, h4, h5, h6, p,
+form, input, div {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+	height: 50px;
+	background-color: rgb(87,74,56);
+	position: fixed;
+	top: 0;
+	width: 100%;
+	z-index: 10;
+}
+
+header p {
+	float: left;
+	line-height: 50px;
+	color: #fff;
+	padding-left: 20px;
+
+}
+
+.top-wrapper {
+	background-image: url(main_visual.jpg);
+	background-size: cover;
+	height: 400px;
+}
+
+.contents-wrapper {
+	background-color: #f4f0e5;
+	width: 100%;
+	padding-left: 15px;
+	padding-right: 15px;
+	margin: auto;
+}
+
+/*clearfixは、横並びにしたあとの要素を巻き込んで、横並びになる問題を解消する。画像を横配置にする*/
+.clearfix, .content-wrapper {
+	zoom: 1;
+}
+
+.clearfix:after, .content-wrapper:after {
+	content: "";
+	display: block;
+	clear: both;
+}
+/*ここまでclearfix*/
+
+
+/*以下、横レイアウト*/
+.content-wrapper img {
+	width: 50%;
+	height: auto;
+	margin: 0;
+	padding: 0 15px;
+	float: left;
+} 
+
+.content-wrapper p {
+	text-align: left;
+	font-size: 0.8em;
+	line-height: 2.0em;
+	padding: 0 15px;
+	margin: 0;
+}
+/*ここまで、横レイアウト*/
+
+
+.content-wrapper {
+	margin-bottom: 30px;
+}
+
+.contents-wrapper a {
+	text-align: center;
+	display: block;
+	color: #2c3853;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+
+footer {
+	background-color: rgb(87,74,56);
+	height: 30px;
+	text-align: center;
+}
+
+footer p {
+	color: rgba(255,255,255,0.6);
+	font-size: 0.7em;
+	line-height: 30px;
+}
+
+h1 {
+	padding-top: 50px;
+	padding-bottom: 20px;
+}
+
+h1 span {
+	font-size: 1.3em;
+
+}
